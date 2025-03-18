@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img1"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Mealscape"
+        android:textColor="#53A4D5"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTextDietary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter dietary preferences (e.g., vegetarian, gluten-free)"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/buttonGenerate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#53A4D5"
+        android:text="Generate Weekly Meal Plan" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_textview"
+                android:padding="8dp"
+                android:text="Your meal plan will appear here"
+                android:textColor="@color/text" />
+
+            <TextView
+                android:id="@+id/textViewGroceryList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_textview"
+                android:padding="8dp"
+                android:text="Grocery list will appear here"
+                android:textColor="@color/text" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#53A4D5"
+        android:text="Save to Favorites" />
+
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#53A4D5"
+        android:text="Share Recipe" />
+
+    <Button
+        android:id="@+id/buttonViewFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#53A4D5"
+        android:text="View Favorites" />
+</LinearLayout>

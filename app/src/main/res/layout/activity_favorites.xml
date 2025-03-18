@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img1"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Scrollable area for other elements -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adlam_display"
+                android:gravity="center"
+                android:padding="8dp"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:text="Favorite Meals"
+                android:textColor="#53A4D5"
+                android:textSize="30sp" />
+
+
+            <!-- Add more static content here if needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ListView for scrolling list items -->
+    <ListView
+        android:id="@+id/listViewFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#000000"
+        android:divider="#53A4D5"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
